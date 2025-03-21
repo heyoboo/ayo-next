@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/ayo-next',
+  basePath: process.env.PAGES_BASE_PATH,
   reactStrictMode: true,
 };
 
