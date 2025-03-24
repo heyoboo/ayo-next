@@ -1,0 +1,21 @@
+# All crawlers are welcome :)
+User-agent: *
+Allow: /
+
+# Disallow other directories in the future, I guess
+Disallow:
+
+# Robot ascii art copied from cloudflare :D
+#              ________
+#   __,_,     |        |
+#  [_|_/      |   HI   |
+#   //        |________|
+# _//    __  /
+#(_|)   |@@|
+# \ \__ \--/ __
+#  \o__|----|  |   __
+#      \ }{ /\ )_ / _\
+#      /\__/\ \__O (__
+#     (--/\--)    \__/
+#     _)(  )(_
+#    `---''---`

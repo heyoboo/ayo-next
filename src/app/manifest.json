@@ -1,0 +1,18 @@
+{
+    "short_name": "Previous",
+    "name": "PreviousJS",
+    "description": "Opposite of NextJS lol",
+    "start_url": "/",
+    "categories": ["lifestyle"],
+    "display": "standalone",
+    "theme_color": "dodgerblue",
+    "background_color": "dodgerblue",
+    "icons": [
+      {
+        "src": "favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+  
