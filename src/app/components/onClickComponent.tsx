@@ -3,9 +3,21 @@
 import Image from "next/image";
 import { useState } from "react";
 
+type User = {
+  id: number,
+  username: string,
+  image: string,
+}
+
+type UsersData = {
+  total: number,
+  limit: number,
+  users: User[]
+}
+
 const OnClickComponent = () => {
   const [isFetching, setIsFetching] = useState(false);
-  const [usersData, setUsersData] = useState<any>(null);
+  const [usersData, setUsersData] = useState<UsersData | null>(null);
 
   const getData = async () => {
     setIsFetching(true);
@@ -35,7 +47,7 @@ const OnClickComponent = () => {
         <div className="overflow-auto p-2 h-[300px] border border-black/[.08] dark:border-white/[.145] rounded">
           <ul>
             {usersData.users.map(
-              (user: { id: number; username: string; image: string }) => (
+              (user: User) => (
                 <li key={user.id} className="hover:underline hover:underline-offset-2">
                   <Image
                     aria-hidden
