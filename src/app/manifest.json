@@ -2,16 +2,17 @@
     "short_name": "Previous",
     "name": "PreviousJS",
     "description": "Opposite of NextJS lol",
-    "start_url": "/",
+    "start_url": "/ayo-next",
     "categories": ["lifestyle"],
     "display": "standalone",
     "theme_color": "dodgerblue",
     "background_color": "dodgerblue",
     "icons": [
       {
-        "src": "favicon.svg",
+        "src": "favicon.png",
         "sizes": "any",
-        "type": "image/svg+xml"
+        "type": "image/png",
+        "purpose": "maskable"
       }
     ]
   }
