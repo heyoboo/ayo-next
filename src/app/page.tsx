@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { OnClickComponent } from "./components/onClickComponent";
 
 export default function Home() {
   return (
@@ -18,7 +19,6 @@ export default function Home() {
             Save and see your changes eternally.
           </li>
         </ol>
-
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-all flex items-center justify-center bg-foreground text-background gap-2 hover:shadow-2xl hover:shadow-zinc-600 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
@@ -40,6 +40,7 @@ export default function Home() {
             Read our dogs
           </a>
         </div>
+        <OnClickComponent />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
