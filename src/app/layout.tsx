@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title,
     description,
     siteName: title,
-    images: "favicon.png"
+    images: "/favicon.png"
   },
   verification: {
     google: "Efax4Pxp17vl34o5p2MNIEb-xWUYmd-bQONDIAuQZhs",
