@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const OnClickComponent = () => {
@@ -36,13 +37,15 @@ const OnClickComponent = () => {
             {usersData.users.map(
               (user: { id: number; username: string; image: string }) => (
                 <li key={user.id} className="hover:underline hover:underline-offset-2">
-                  <img
+                  <Image
                     aria-hidden
                     className="inline"
                     src={user.image}
                     alt={`${user.username}'s image`}
                     width={16}
                     height={16}
+                    loading = 'lazy'
+                    unoptimized
                   />
                   <span> {user.username}</span>
                 </li>
