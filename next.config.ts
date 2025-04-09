@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: process.env.GITHUB_ACTION ? 'export' : undefined,
   basePath: process.env.PAGES_BASE_PATH,
   reactStrictMode: true,
 };
